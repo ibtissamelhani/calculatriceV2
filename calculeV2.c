@@ -1,7 +1,7 @@
 #include <stdio.h>
 #include <math.h>
 
-
+// j'ai pas encore fini le projet
 
 double addition(double a , double b){
     return a+b;
@@ -77,18 +77,18 @@ int calcMoyenne(int tab[], int tailleTableau){
  printf("entrer <4> quitter \n");
  scanf("%d",choix2);
 
- saisir(tab[], tailleTableau);
+ saisir(tab, tailleTableau);
  switch(choix2){
  case 1:
-     result=maxTableau(tab[],tailleTableau);
+     result=maxTableau(tab,tailleTableau);
      printf("%d", result);
      break;
  case 2:
-     result=minTableau(tab[],tailleTableau);
+     result=minTableau(tab,tailleTableau);
      printf("%d", result);
      break;
  case 3:
-    result=calcMoyenne(tab[],tailleTableau);
+    result=calcMoyenne(tab,tailleTableau);
     printf("%d", result);
      break;
  default:
@@ -163,6 +163,7 @@ case 6:
      printf("= %lf \n",r);
     break;
 case 8:
+    MenuTableau();
 
 default:
     printf("ce choix n'existe pas entrer un nombre entre 1 et 7");
